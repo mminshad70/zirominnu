@@ -1,0 +1,26 @@
+<div class="card">
+    <h3>User Panel</h3>
+
+    <p><b>Device ID:</b> <span id="deviceID"></span></p>
+
+    <button onclick="sendToAdmin()">Send to Admin</button>
+
+    <input id="licenseKey" placeholder="Enter License Key">
+    <button onclick="activate()">Activate</button>
+</div>
+
+<div class="card">
+    <h3>Status</h3>
+    <p id="status">Not sent</p>
+</div>
+
+<!-- ADMIN PANEL -->
+<div class="card">
+    <h3>Admin Panel</h3>
+
+    <p>Pending Device IDs:</p>
+    <div id="requests"></div>
+
+    <input id="genKey" placeholder="Generate Key">
+    <button onclick="generateKey()">Generate License</button>
+</div>
